@@ -1,0 +1,4 @@
+FROM nginx:alpine
+COPY . /user/share/nginx/html
+docker build -t name .
+docker run -d -p 1010:80 name
